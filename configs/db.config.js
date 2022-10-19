@@ -13,6 +13,19 @@ module.exports={
             idle:10000, //max time in ms that a connection can be idle before being released
         }
     },
+    test:{
+        HOST:"localhost",
+        USER:"root",
+        PASSWORD:"Sksql@12345",
+        DB:"ecommerce",
+        dialect:"mysql",
+        pool:{
+            max:5,
+            min:0,
+            acquire:30000, //max time in ms that a pool will try to get aconnection before throwing error.
+            idle:10000, //max time in ms that a connection can be idle before being released
+        }
+    },
     production:{
         HOST:"sql6.freemysqlhosting.net",
         USER:"sql6527674",
